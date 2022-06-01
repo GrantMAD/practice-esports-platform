@@ -1,0 +1,663 @@
+body {
+    background-color: black;
+}
+
+.layout-container {
+    padding-top: 50px;
+    padding-left: 156px;
+    padding-right: 156px;
+}
+
+#navbar {
+    background-color: rgb(30,30,30);
+    border-radius: 10px 10px 0 0;
+    height: 70px;
+}
+
+.nav-item {
+    display: flex;
+    margin-right: 20px;
+}
+
+#nav-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+}
+
+#links-container {
+    margin-left: 20px;
+}
+
+.box{
+    margin-top: 7px;
+}
+.input {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: 4px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: #ffd52d;
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: 200px;
+    background: white;
+    border-radius: 10px;
+}
+i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: #ffd52d;
+    transition: .2s;
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+
+.login-button {
+    width: 95px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: rgb(114, 2, 2);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    border: none;
+    padding: 0;
+}
+
+.navbar-game-selection-area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(43, 42, 42);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.navbar-games-selection {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-game-selection-csgo, .navbar-game-selection-dota2 {
+    padding: 12px 16px 12px 16px;
+}
+
+.navbar-allsports-selection {
+    padding: 12px 16px 12px 16px;
+}
+
+.navbar-gridmenu {
+    filter: invert(1);
+}
+
+.navbar-gridmenu-heading {
+    padding-left: 10px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.selection-image {
+    height: 24px;
+    width: 24px;
+    filter: invert(1);
+}
+
+.main-content-area {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/* landing page */
+
+.ongoing-games-area {
+    width: 382px;
+    margin-right: 30px;
+}
+
+.ongoing-games-heading, .live-events-heading, .news-heading {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.ongoing-game-block-area {
+    margin-top: 20px;
+    height: 1247.69px;
+    background-color: rgb(43, 42, 42);
+    border-radius: 10px 10px 10px 10px;
+    overflow-y:scroll;
+}
+
+.ongoing-game-block {
+    display: flex;
+    flex-direction: column;
+    height: 134px;
+    padding: 16px;
+    border-bottom: 1px solid rgba(24,24,24);
+}
+
+.ongoing-game-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.ongoing-game-icon {
+    margin-top: 5px;
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+}
+
+.ongoing-game-time {
+    font-weight: 800;
+    color: white;
+    margin-right: 50%;
+}
+
+.ongoing-game-teams-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.ongoing-game-team-name {
+    margin-left: 16px;
+    color: white;
+}
+
+.ongoing-game-team {
+    margin-bottom: 10px;
+}
+
+.ongoing-game-score {
+    margin-left: 56%;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    border-radius: 0 10px 10px 0;
+    width: 8px;
+    background-color: rgb(77, 77, 77);
+}
+
+.live-events-area {
+    margin-right: 30px;
+}
+
+.live-events-content-area {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 10px 10px;
+}
+
+.live-event-stream {
+    width: 788px;
+    height: 660px;
+    background-color: rgb(30, 30, 30);
+    margin-top: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.live-stream {
+    height: 442px;
+}
+
+.live-event-discription {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    padding: 16px 24px 16px;
+    height: 97px;
+    border-bottom: 1px solid rgba(0, 0, 0, 6);
+}
+
+.live-event-match-area {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    padding: 16px;
+}
+
+.live-event-current-heading {
+    color: white;
+    margin-bottom: 16px;
+}
+
+.live-event-current-summary-left  {
+    width: 50%;
+}
+
+.live-event-current-summary-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 50%;   
+    padding-bottom: 5px;
+}
+
+.live-event-summary-right {
+    margin-left: 10px;
+}
+
+#live-event-summary-heading {
+    color: rgb(102, 102, 102);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.live-event-summary-heading-discription {
+    color: white;
+    font-weight: 700;
+}
+
+.live-event-current-team {
+    display: flex;
+}
+
+.live-event-current-team-name {
+    margin-left: 16px;
+    color: white;
+}
+
+.live-event-current-score {
+    color: white;
+    margin-left: 50%;
+}
+
+.live-event-current-team-icon {
+    width: 16px;
+    height: 15px;
+}
+
+.live-event-icon {
+    height: 70px;
+    margin-right: 10px;
+}
+
+.live-event-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.live-event-summary-heading {
+    color: white;
+    font-size: 20px;
+}
+
+.live-event-game-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+}
+
+.live-event-game-name {
+    font-weight: 700;
+    color: white;
+}
+
+.live-event-summary-date, .live-event-summary-prize-pool {
+    margin-left: 16px;
+    color: rgb(102, 102, 102);
+}
+
+.live-event-matches {
+    display: flex;
+    flex-direction: column;
+}
+
+.live-event-match {
+    display: flex;
+    align-items: center;
+    background-color: rgb(43, 42, 42);
+    height: 96px;
+    border-bottom: 1px solid rgba(0, 0, 0, 6);
+    padding: 16px;
+}
+
+.live-event-match-link:hover {
+    text-decoration: none;
+}
+
+#live-event-match {
+    border-radius: 0 0 10px 10px;
+}
+
+.live-event-match-logo {
+    height: 48px;
+}
+
+.live-event-match-name {
+    color: white;
+}
+
+.live-event-match-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.live-event-match-heading {
+    color: white;
+    font-size: 1rem;
+}
+
+.live-event-match-name-date-prizepool {
+    display: flex;
+    flex-direction: row;
+}
+
+.live-event-match-date, .live-event-match-prizepool {
+    font-size: .75rem;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: rgb(102, 102, 102);;
+}
+
+#live-event-match-logo {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+    margin-bottom: 3px;
+}
+
+.news-content-area {
+    margin-top: 20px;
+    height: 1247.69px;
+    width: 382px;
+    background-color: rgb(43, 42, 42);
+    border-radius: 10px;
+}
+
+.news-story {
+    height: 165px;
+    padding: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 6);
+}
+
+.news-story-link:hover {
+    text-decoration: none;
+}
+
+.news-story-game-name {
+    color: white;
+    font-weight: 600;
+}
+
+.news-story-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.news-story-icon {
+    margin-bottom: 5px;
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+}
+
+.news-story-header-left {
+    margin-left: 50%;
+}
+
+.news-story-comment-value {
+    color: white;
+}
+
+.news-story-title {
+    color: white;
+    font-weight: 800;
+}
+
+.news-story-sample {
+    font-size: 13px;
+    color: rgb(102, 102, 102);
+}
+
+/* Calander page */
+
+#main-content-area {
+    flex-direction: column;
+}
+
+.calanderpage-heading, .vodpage-heading {
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.calander-section {
+    margin-bottom: 50px;
+}
+
+.calander-section-heading {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding-left: 1.5rem;
+    color: white;
+    background-color: rgba(24,24,24);
+    font-weight: 600;
+    border-radius: 10px 10px 0 0;
+}
+
+.calander-match {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding-left: 1.5rem;
+    background-color: rgba(43,42,42);
+    height: 105px;
+}
+
+.calander-match-game-time {
+    display: flex;
+    width: 20%;
+}
+
+.calander-match-time {
+    font-size: 1.25rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    color: white;
+}
+
+#calander-match {
+    text-decoration: none !important;
+}
+
+.calander-teams-area {
+    width: 20%;
+}
+
+.calander-teams-score-area {
+    display: flex;
+    width: 20%;
+}
+
+.calander-teams-score {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 00.5rem;
+}
+
+.calander-team-logo {
+    width: 16px;
+    height: 16px;
+}
+
+.calander-game-team-name {
+    margin-left: 1rem;
+}
+
+.calander-game-score {
+    margin-left: 40%;
+}
+
+.calander-tournament {
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+}
+
+.calander-event-name-stage {
+    color: white;
+    margin-right: 20px;
+    text-align: right;
+}
+
+#calander-event-stage {
+    color: rgba(102,102,102);
+    margin-top: 5px;
+}
+
+.vod-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.vod-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.vod-item {
+    height: 223px;
+    width: 298px;
+    background-color: rgba(30,30,30);
+    margin-right: 20px;
+}
+
+.vod-main-image {
+    height: 143px;
+    width: 298px;
+}
+.vod-information {
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.vod-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    color: white;
+    font-weight: 700;
+    font-size: .875rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vod-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.vod-game-icon {
+    height: 12px;
+    width: 12px;
+}
+
+.vod-views-icon {
+    margin-left: 10px;
+    height: 12px;
+    width: 12px;
+}
+
+.vod-event-info {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    color: white;
+    font-size: .75rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+}
+
+.vod-views-area {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.vod-views-count {
+    margin-left: 10px;
+    font-size: .75rem;
+    color: white;
+}
+
+.footer-container {
+    margin-top: 100px;
+}
+
+.footer-area {
+    display: flex;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+}
+
+.social-image {
+    padding: 12px;
+    filter: invert(1);
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-links {
+    color: white;
+    margin-right: 300px;
+    font-weight: 600;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-end {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
